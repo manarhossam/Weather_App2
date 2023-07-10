@@ -28,19 +28,31 @@ class weathermodel {
   }
 
   String getimage() {
-    if (weatherstatename == 'Thunderstorm' || weatherstatename == 'Thunder') {
+    if (weatherstatename == 'Thundery outbreaks possible' ||
+        weatherstatename == 'Moderate or heavy snow with thunder' ||
+        weatherstatename == 'Patchy light snow with thunder' ||
+        weatherstatename == 'Moderate or heavy rain with thunder' ||
+        weatherstatename == 'Patchy light rain with thunder') {
       return 'assests/images/thunderstorm.png';
-    } else if (weatherstatename == 'Sleet' ||
-        weatherstatename == 'Snow' ||
-        weatherstatename == 'Hail') {
+    } else if (weatherstatename == 'Blizzard' ||
+        weatherstatename == 'Patchy snow possible' ||
+        weatherstatename == 'Patchy sleet possible' ||
+        weatherstatename == 'Patchy freezing drizzle possible' ||
+        weatherstatename == 'Blowing snow') {
       return 'assests/images/snow.png';
-    } else if (weatherstatename == 'Heavy Cloud ') {
+    } else if (weatherstatename == 'Freezing fog' ||
+        weatherstatename == 'Fog' ||
+        weatherstatename == 'Heavy Cloud' ||
+        weatherstatename == 'Mist' ||
+        weatherstatename == 'Fog') {
       return 'assests/images/cloudy.png';
-    } else if (weatherstatename == 'Light Rain' ||
-        weatherstatename == 'Heavy Rain') {
+    } else if (weatherstatename == 'Patchy rain possible' ||
+        weatherstatename == 'Heavy Rain' ||
+        weatherstatename == 'Showers	') {
       return 'assests/images/rainy.png';
-    } else if (weatherstatename == 'Clear' ||
-        weatherstatename == 'Light Cloud') {
+    } else if (weatherstatename == 'Sunny' ||
+        weatherstatename == 'Clear' ||
+        weatherstatename == 'partly cloudy') {
       return 'assests/images/clear.png';
     } else {
       return 'assests/images/clear.png';
@@ -48,20 +60,32 @@ class weathermodel {
   }
 
   MaterialColor getthemecolor() {
-    if (weatherstatename == 'Thunderstorm' || weatherstatename == 'Thunder') {
+    if (weatherstatename == 'Sunny' ||
+        weatherstatename == 'Clear' ||
+        weatherstatename == 'partly cloudy') {
       return Colors.orange;
-    } else if (weatherstatename == 'Sleet' ||
-        weatherstatename == 'Snow' ||
-        weatherstatename == 'Hail') {
+    } else if (weatherstatename == 'Blizzard' ||
+        weatherstatename == 'Patchy snow possible' ||
+        weatherstatename == 'Patchy sleet possible' ||
+        weatherstatename == 'Patchy freezing drizzle possible' ||
+        weatherstatename == 'Blowing snow') {
       return Colors.blue;
-    } else if (weatherstatename == 'Heavy Cloud ') {
+    } else if (weatherstatename == 'Freezing fog' ||
+        weatherstatename == 'Fog' ||
+        weatherstatename == 'Heavy Cloud' ||
+        weatherstatename == 'Mist' ||
+        weatherstatename == 'Fog') {
       return Colors.blueGrey;
-    } else if (weatherstatename == 'Light Rain' ||
-        weatherstatename == 'Heavy Rain') {
+    } else if (weatherstatename == 'Patchy rain possible' ||
+        weatherstatename == 'Heavy Rain' ||
+        weatherstatename == 'Showers	') {
       return Colors.blue;
-    } else if (weatherstatename == 'Clear' ||
-        weatherstatename == 'Light Cloud') {
-      return Colors.grey;
+    } else if (weatherstatename == 'Thundery outbreaks possible' ||
+        weatherstatename == 'Moderate or heavy snow with thunder' ||
+        weatherstatename == 'Patchy light snow with thunder' ||
+        weatherstatename == 'Moderate or heavy rain with thunder' ||
+        weatherstatename == 'Patchy light rain with thunder') {
+      return Colors.deepPurple;
     } else {
       return Colors.orange;
     }
